@@ -8,20 +8,29 @@
   </head>
   <body>
     <header>
-      <a href="">Logo</a>
-      <h1>Banner</h1>
+      <div class="info">
+        <a href="">Logo</a>
+        <p>
+          Esta pagina sólo funcionan bien en las últimas versiones Chrome y en
+          Edge
+        </p>
+      </div>
+      <div class="banner">
+        <input type="radio" name="header" id="desarrollo" checked />
+        <label for="desarrollo"
+          ><span class="banner__icon">click</span>
+          <h2 class="banner__text">Desarrollo Web</h2>
+          <span class="banner__icon">click</span></label
+        >
+        <input type="radio" name="header" id="diseño" />
+        <label for="diseño"
+          ><span class="banner__icon">click</span>
+          <h2 class="banner__text">Diseño web</h2>
+          <span class="banner__icon">click</span></label
+        >
+      </div>
     </header>
     <main>
-      <nav>
-        <input type="radio" name="select" id="all" checked />
-        <label for="all">All</label>
-        <input type="radio" name="select" id="tools" />
-        <label for="tools">Tools</label>
-        <input type="radio" name="select" id="articles" />
-        <label for="articles">Articles</label>
-        <input type="radio" name="select" id="people" />
-        <label for="articles">People</label>
-      </nav>
       <section class="last-visit">
         <div class="carousel">
           <img src="https://source.unsplash.com/featured/200x208" alt="" />
@@ -34,6 +43,16 @@
         </div>
       </section>
 
+      <nav>
+        <input type="radio" name="select" id="all" checked />
+        <label for="all">All</label>
+        <input type="radio" name="select" id="tools" />
+        <label for="tools">Tools</label>
+        <input type="radio" name="select" id="articles" />
+        <label for="articles">Articles</label>
+        <input type="radio" name="select" id="people" />
+        <label for="articles">People</label>
+      </nav>
       <section class="all-cards">
         <div class="card">
           <div class="container">
@@ -182,5 +201,25 @@
         </div>
       </section>
     </main>
+    <footer>
+      <p>
+        Some of this code is thanks to awesome people:
+        <a
+          href="https://www.youtube.com/watch?v=j5-NW4B7gEE&t=7s"
+          target="_blank"
+          >Jhey Tompkins</a
+        >,
+        <a
+          href="https://www.youtube.com/watch?v=LGRogkgRrOs&t=1672s"
+          target="_blank"
+          >kevin Powell</a
+        >,
+        <a
+          href="https://dev.to/madsstoumann/dark-mode-in-3-lines-of-css-and-other-adventures-1ljj"
+          target="_blank"
+          >Mads Stoumann</a
+        >,<a href="https://una.im/style-queries/" target="_blank">Una</a>,
+      </p>
+    </footer>
   </body>
 </html>
