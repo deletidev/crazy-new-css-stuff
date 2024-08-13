@@ -101,13 +101,20 @@ main {
   } */
 }
 
+/*I need external-container to make the container queries work correctly in "Safari"
+ because in the grid the container queries do not work and break the grid.*/
+
+.external-container {
+  container-type: inline-size;
+  container-name: grid;
+}
 .all-cards {
+  /* container-type: inline-size;
+  container-name: grid; */
   flex-grow: 1;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   grid-auto-flow: dense;
-  container-type: inline-size;
-  container-name: grid;
   gap: 10px;
 
   .card {
